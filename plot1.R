@@ -35,7 +35,7 @@ power_data$dateTime <- strptime(power_data$dateTime, "%d/%m/%Y %H:%M:%S")
 
 # Set parameters for labels and margins
 par(mfrow = c(1, 1), mar = c(4, 4, 4, 4), oma = c(2, 2, 2, 2), cex.main = 0.9, 
-    cex.lab = 0.7, cex.axis = 0.7)
+    cex.lab = 0.7, cex.axis = 0.7, bg = "transparent")
 
 # Histogram of the amount of global active power used, 12 breaks and red color, labels
 hist(power_data$Global_active_power, col = "red", breaks = 12,

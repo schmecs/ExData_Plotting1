@@ -35,7 +35,7 @@ power_data$dateTime <- strptime(power_data$dateTime, "%d/%m/%Y %H:%M:%S")
 
 # Set parameters for labels and margins (2 by 2 grid)
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 2), oma = c(1, 1, 1, 1), cex.main = 0.9, cex.lab = 0.8, 
-    cex.axis = 0.7)
+    cex.axis = 0.7, bg = "transparent")
 
 # plot 4 charts  - will go across and then down because of use of mfrow
 with(power_data, {
